@@ -36,6 +36,7 @@ html {
 .page__upperMenu {
     padding-left: 24px;
     padding-right: 24px;
+    margin-bottom: 16px;
 }
 
 .upperMenu {
@@ -55,16 +56,12 @@ html {
     display: block;
 }
 
-.page__mainMenu {
-    position: absolute;
-    top: 116px;
-}
 
 .mainMenu {
     width: 222px;
-    height: calc(100% - 116px);
     display: flex;
     flex-direction: column;
+    flex-grow:1;
 }
 
 .mainMenu__text {
