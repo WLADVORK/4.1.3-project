@@ -15,6 +15,7 @@
 
 html {
     box-sizing: border-box;
+    height: 100%;
 }
 
 *, *:before, *:after {
@@ -23,13 +24,13 @@ html {
 
 .page {
     width: 320px;
-    height: 1024px;
+    height: 100%;
     margin:0;
     background-color: #FFFFFF;
     box-shadow: 16px 0px 52px 0px #0E185033,
     -2px 0px 4px 0px #454F7E05;
-;
-
+    display: flex;
+    flex-direction: column;
 }
 
 .page__upperMenu {
@@ -46,8 +47,12 @@ html {
 }
 
 
-.upperMenu__ic-search {
+.upperMenu__icon-search {
     margin-left: auto;
+}
+
+.upperMenu__image {
+    display: block;
 }
 
 .page__mainMenu {
@@ -57,7 +62,7 @@ html {
 
 .mainMenu {
     width: 222px;
-    height: 876px;
+    height: calc(100% - 116px);
     display: flex;
     flex-direction: column;
 }
@@ -122,21 +127,18 @@ html {
     white-space: nowrap;
 }
 
-.contact__ic-call {
+.contact__icon-call {
     height: 40px;
 }
 
-.contact__ic-chat {
+.contact__icon-chat {
     height: 40px;
 }
 
-.contact__ic-profile {
+.contact__icon-profile {
     height: 40px;
 }
 
-.image {
-    display: block;
-}
 
 .mainMenu__lang {
     margin-left: 24px;
